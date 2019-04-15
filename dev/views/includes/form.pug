@@ -1,0 +1,18 @@
+mixin input(type, label)
+  if type === 'radio' 
+    input(type=type, name='role', value=label, id=label)
+    label(for=label) #{label}
+  else
+    input(type= type, name=label, placeholder=label)
+
+h2 Join Us!
+form(action="#", method='post')
+  +input('text', 'name')
+  +input('text', 'surname')
+  +input('email', 'email')
+  p Chose your speciality
+  div
+    +input('radio', 'PR')
+    +input('radio', 'Management')
+    +input('radio', 'Development')
+  input(type='submit' value='Submit')

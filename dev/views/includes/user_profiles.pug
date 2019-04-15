@@ -1,0 +1,9 @@
+mixin employeeCard(employee)
+  div
+    img(src=employee.photo, alt=employee.position)
+    p #{employee.position}
+    p #{employee.moto}
+
+section.staff
+  for employee in staff
+    +employeeCard(employee)

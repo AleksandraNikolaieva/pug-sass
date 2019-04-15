@@ -1,0 +1,55 @@
+@import './partials/variables';
+
+body {
+  background-color: $mainColor;
+  color: $textColor;
+  padding: 0;
+  margin: 0;
+
+  a img {
+    width: 30px;
+    height: 30px;
+    position: fixed;
+    bottom: 30px;
+    right: 10px;
+  }
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+h1, h2 {
+  text-transform: uppercase;
+  text-align: center;
+  font-family: $titleFont;
+  font-weight: bold;
+}
+
+h1 {
+  letter-spacing: 10px;
+}
+
+header {
+  background-color: #A4A49E;
+  height: 8vh;
+  text-align: center;
+  margin-bottom: 2vh;
+  h1 {
+    color: #F7F70C;
+    display: inline;
+    line-height: 8vh;
+    text-shadow: 2px -2px 2px #ECECE0;
+  }
+}
+
+.home {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 70px;
+}
+
+@import './partials/user_profiles';
+@import './partials/barchart';
+@import './partials/form';
+@import './partials/responsive';

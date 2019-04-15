@@ -1,0 +1,44 @@
+.staff {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  div {
+    width: 80%;
+    padding-top: 5px;
+    margin: 5px auto;
+    box-shadow: 0 0 5px #73605C;
+    background-color: desaturate($mainColor, 20%);
+
+    &:hover {
+      background-color: saturate($mainColor, 40%);
+      box-shadow: 0 0 10px #73605C;
+    }
+
+    img {
+      width: 33%;
+      min-width: 128px;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+
+    p {
+      text-align: center;
+      margin: 5px;
+      font-family: $titleFont;
+      font-size: 14px;
+    }
+
+    p:nth-of-type(1) {
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+
+    p:nth-of-type(2):before,
+    p:nth-of-type(2):after {
+      content: '"';
+    }
+  }
+}

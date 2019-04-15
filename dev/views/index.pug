@@ -1,0 +1,14 @@
+doctype html
+html
+  include includes/head.pug
+  body
+    header
+      h1 Dream team
+    include includes/variables.pug
+    section(class='home', id='home')
+      include includes/user_profiles.pug
+      include includes/barchart.pug
+    section
+      include includes/form.pug
+    a(href='#home')
+      img(src='./img/up-arrow.svg')

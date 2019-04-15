@@ -1,0 +1,23 @@
+mixin tileGroup(key)
+  div(class=key)
+    -for(let i = 0; i < staff.length; i++)
+      div(class='user-'+(i+1))
+    
+section.barchart
+  h2 Employee engagement scores
+  div.container
+    div.chart
+      p Engagement index
+      ul.axisY
+        -for(let i = maxIndex; i > 0; i--)
+          li #{i}
+      div.groups
+        -for(key in staff[0].engagement)
+          +tileGroup(key)
+      ul.axisX 
+        -for(key in staff[0].engagement)
+          li #{key}
+      p Engagement component
+  div.legend
+    each employee, index in staff
+      span #{employee.position}

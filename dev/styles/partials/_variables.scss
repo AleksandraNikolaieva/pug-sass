@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+$engagements: (
+    (job: 10, team: 5, supervision: 1),
+    (job: 7, team: 9, supervision: 6),
+    (job: 8, team: 7, supervision: 4)
+);
+
+$maxIndex: 10;
+
+$employeeColors: #71E6E7, #C590DE, #FF96C6;
+
+$mainColor: #F8F3BB;
+$textColor: #1B1C17;
+$titleFont: "Nunito";
+$white: #FFFFFF;
+$barchartHeigh: 90vh;
