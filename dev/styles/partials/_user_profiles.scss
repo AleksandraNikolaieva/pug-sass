@@ -10,6 +10,7 @@
     margin: 5px auto;
     box-shadow: 0 0 5px #73605C;
     background-color: desaturate($mainColor, 20%);
+    border-radius: 5px;
 
     &:hover {
       background-color: saturate($mainColor, 40%);
@@ -22,6 +23,7 @@
       height: auto;
       display: block;
       margin: 0 auto;
+      border-radius: 5px;
     }
 
     p {

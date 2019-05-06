@@ -12,12 +12,12 @@ section.barchart
         -for(let i = maxIndex; i > 0; i--)
           li #{i}
       div.groups
-        -for(key in staff[0].engagement)
+        each key in engagements
           +tileGroup(key)
       ul.axisX 
-        -for(key in staff[0].engagement)
+        each key in engagements
           li #{key}
       p Engagement component
-  div.legend
-    each employee, index in staff
-      span #{employee.position}
+      div.legend
+        each employee, index in staff
+          span #{employee.position}
